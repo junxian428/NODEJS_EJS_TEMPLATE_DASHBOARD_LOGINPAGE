@@ -36,10 +36,31 @@ router.get('/logout', (req, res) => {
   });
 });
 
+
+router.get('/logview', (req, res) => {
+  res.render('logview');
+
+});
+
+
 // Define your route
 router.get('/', isAuthenticated, async (req, res) => {
   // If the user is authenticated, redirect to dashboard
-  res.redirect('/dashboard');
+  const message = 'No real time data from PLC';
+  var database = "data";
+ 
+  //console.log('All users:', users);
+ 
+   // Perform a sample query
+   const query = 'SELECT * FROM PLC';
+   const PLC = await db.query(query);
+   //console.log('All address:', PLC);
+ 
+     database =  JSON.stringify(PLC);
+     var database_json;
+     database_json = JSON.parse(database);
+
+  res.render('dashboard', { message, database_json,  websocketUrl: process.env.WEBSOCKET_URL });
 });
 
 
