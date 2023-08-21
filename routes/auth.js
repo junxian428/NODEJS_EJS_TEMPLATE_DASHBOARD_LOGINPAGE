@@ -36,6 +36,11 @@ router.get('/logout', (req, res) => {
   });
 });
 
+// Define your route
+router.get('/', isAuthenticated, async (req, res) => {
+  // If the user is authenticated, redirect to dashboard
+  res.redirect('/dashboard');
+});
 
 
 router.get('/dashboard', isAuthenticated,async (req, res) => {
