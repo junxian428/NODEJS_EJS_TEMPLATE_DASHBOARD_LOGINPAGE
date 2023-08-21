@@ -1,0 +1,3683 @@
+<!DOCTYPE html>
+
+<!--
+ // WEBSITE: https://themefisher.com
+ // TWITTER: https://twitter.com/themefisher
+ // FACEBOOK: https://www.facebook.com/themefisher
+ // GITHUB: https://github.com/themefisher/
+-->
+
+<html lang="en" dir="ltr">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>PLC Maintainence & Monitoring & Management System</title>
+    
+  <!-- theme meta -->
+  <meta name="theme-name" content="mono" />
+
+  <!-- GOOGLE FONTS -->
+  <link href="https://fonts.googleapis.com/css?family=Karla:400,700|Roboto" rel="stylesheet">
+  <link href="plugins/material/css/materialdesignicons.min.css" rel="stylesheet" />
+  <link href="plugins/simplebar/simplebar.css" rel="stylesheet" />
+
+  <!-- PLUGINS CSS STYLE -->
+  <link href="plugins/nprogress/nprogress.css" rel="stylesheet" />
+  
+  
+  
+  
+  <link href="plugins/DataTables/DataTables-1.10.18/css/jquery.dataTables.min.css" rel="stylesheet" />
+  
+  
+  
+  <link href="plugins/jvectormap/jquery-jvectormap-2.0.3.css" rel="stylesheet" />
+  
+  
+  
+  <link href="plugins/daterangepicker/daterangepicker.css" rel="stylesheet" />
+  
+  
+  
+  <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+  
+  
+  
+  <link href="plugins/toaster/toastr.min.css" rel="stylesheet" />
+  
+  
+  <!-- MONO CSS -->
+  <link id="main-css-href" rel="stylesheet" href="css/style.css" />
+
+  
+
+
+  <!-- FAVICON -->
+  <link href="images/favicon.png" rel="shortcut icon" />
+
+  <!--
+    HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries
+  -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+  <script src="plugins/nprogress/nprogress.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+
+  <body class="navbar-fixed sidebar-fixed" id="body">
+    <script>
+      NProgress.configure({ showSpinner: false });
+      NProgress.start();
+    </script>
+
+    
+    <div id="toaster"></div>
+    
+
+    <!-- ====================================
+    ——— WRAPPER
+    ===================================== -->
+    <div class="wrapper">
+      
+      
+        <!-- ====================================
+          ——— LEFT SIDEBAR WITH OUT FOOTER
+        ===================================== -->
+        <aside class="left-sidebar sidebar-dark" id="left-sidebar">
+          <div id="sidebar" class="sidebar sidebar-with-footer">
+            <!-- Aplication Brand -->
+            <div class="app-brand">
+              <a href="/">
+                <img src="images/logo.png" alt="Mono">
+                <span class="brand-name">Robomatics</span>
+              </a>
+            </div>
+            <!-- begin sidebar scrollbar -->
+            <div class="sidebar-left" data-simplebar style="height: 100%;">
+              <!-- sidebar menu -->
+              <ul class="nav sidebar-inner" id="sidebar-menu">
+                
+
+                
+                  <li
+                   class="active"
+                   >
+                    <a class="sidenav-item-link" href="index.html">
+                      <i class="mdi mdi-briefcase-account-outline"></i>
+                      <span class="nav-text">PLC Monitoring</span>
+                    </a>
+                  </li>
+                
+
+                
+
+                
+                  <li
+                   >
+                    <a class="sidenav-item-link" href="analytics.html">
+                      <i class="mdi mdi-chart-line"></i>
+                      <span class="nav-text">Analytics Dashboard</span>
+                    </a>
+                  </li>
+                
+
+                
+
+                
+                  <li class="section-title">
+                    Apps
+                  </li>
+                
+
+                
+
+                
+                  <li
+                   >
+                    <a class="sidenav-item-link" href="chat.html">
+                      <i class="mdi mdi-wechat"></i>
+                      <span class="nav-text">Chat</span>
+                    </a>
+                  </li>
+                
+
+                
+
+                
+                  <li
+                   >
+                    <a class="sidenav-item-link" href="contacts.html">
+                      <i class="mdi mdi-phone"></i>
+                      <span class="nav-text">Contacts</span>
+                    </a>
+                  </li>
+                
+
+                
+
+                
+                  <li
+                   >
+                    <a class="sidenav-item-link" href="team.html">
+                      <i class="mdi mdi-account-group"></i>
+                      <span class="nav-text">Team</span>
+                    </a>
+                  </li>
+                
+
+                
+
+                
+                  <li
+                   >
+                    <a class="sidenav-item-link" href="calendar.html">
+                      <i class="mdi mdi-calendar-check"></i>
+                      <span class="nav-text">Calendar</span>
+                    </a>
+                  </li>
+                
+
+                
+
+                
+                  <li  class="has-sub" >
+                    <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#email"
+                      aria-expanded="false" aria-controls="email">
+                      <i class="mdi mdi-email"></i>
+                      <span class="nav-text">email</span> <b class="caret"></b>
+                    </a>
+                    <ul  class="collapse"  id="email"
+                      data-parent="#sidebar-menu">
+                      <div class="sub-menu">
+                        
+                        
+                          
+                            <li >
+                              <a class="sidenav-item-link" href="email-inbox.html">
+                                <span class="nav-text">Email Inbox</span>
+                                
+                              </a>
+                            </li>
+                          
+                        
+
+                        
+                        
+                          
+                            <li >
+                              <a class="sidenav-item-link" href="email-details.html">
+                                <span class="nav-text">Email Details</span>
+                                
+                              </a>
+                            </li>
+                          
+                        
+
+                        
+                        
+                          
+                            <li >
+                              <a class="sidenav-item-link" href="email-compose.html">
+                                <span class="nav-text">Email Compose</span>
+                                
+                              </a>
+                            </li>
+                          
+                        
+
+                        
+                      </div>
+                    </ul>
+                  </li>
+                
+
+                
+
+                
+                  <li class="section-title">
+                    UI Elements
+                  </li>
+                
+
+                
+
+                
+                  <li  class="has-sub" >
+                    <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#ui-elements"
+                      aria-expanded="false" aria-controls="ui-elements">
+                      <i class="mdi mdi-folder-outline"></i>
+                      <span class="nav-text">UI Components</span> <b class="caret"></b>
+                    </a>
+                    <ul  class="collapse"  id="ui-elements"
+                      data-parent="#sidebar-menu">
+                      <div class="sub-menu">
+                        
+                        
+                          
+                            <li >
+                              <a class="sidenav-item-link" href="alert.html">
+                                <span class="nav-text">Alert</span>
+                                
+                              </a>
+                            </li>
+                          
+                        
+
+                        
+                        
+                          
+                            <li >
+                              <a class="sidenav-item-link" href="badge.html">
+                                <span class="nav-text">Badge</span>
+                                
+                              </a>
+                            </li>
+                          
+                        
+
+                        
+                        
+                          
+                            <li >
+                              <a class="sidenav-item-link" href="breadcrumb.html">
+                                <span class="nav-text">Breadcrumb</span>
+                                
+                              </a>
+                            </li>
+                          
+                        
+
+                        
+                        
+                        <li  class="has-sub" >
+                          <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#buttons"
+                            aria-expanded="false" aria-controls="buttons">
+                            <span class="nav-text">Buttons</span> <b class="caret"></b>
+                          </a>
+                          <ul  class="collapse"  id="buttons">
+                            <div class="sub-menu">
+                              
+                              <li >
+                                <a href="button-default.html">Button Default</a>
+                              </li>
+                              
+                              <li >
+                                <a href="button-dropdown.html">Button Dropdown</a>
+                              </li>
+                              
+                              <li >
+                                <a href="button-group.html">Button Group</a>
+                              </li>
+                              
+                              <li >
+                                <a href="button-social.html">Button Social</a>
+                              </li>
+                              
+                              <li >
+                                <a href="button-loading.html">Button Loading</a>
+                              </li>
+                              
+                            </div>
+                          </ul>
+                        </li>
+                        
+
+                        
+                        
+                          
+                            <li >
+                              <a class="sidenav-item-link" href="card.html">
+                                <span class="nav-text">Card</span>
+                                
+                              </a>
+                            </li>
+                          
+                        
+
+                        
+                        
+                          
+                            <li >
+                              <a class="sidenav-item-link" href="carousel.html">
+                                <span class="nav-text">Carousel</span>
+                                
+                              </a>
+                            </li>
+                          
+                        
+
+                        
+                        
+                          
+                            <li >
+                              <a class="sidenav-item-link" href="collapse.html">
+                                <span class="nav-text">Collapse</span>
+                                
+                              </a>
+                            </li>
+                          
+                        
+
+                        
+                        
+                          
+                            <li >
+                              <a class="sidenav-item-link" href="editor.html">
+                                <span class="nav-text">Editor</span>
+                                
+                              </a>
+                            </li>
+                          
+                        
+
+                        
+                        
+                          
+                            <li >
+                              <a class="sidenav-item-link" href="list-group.html">
+                                <span class="nav-text">List Group</span>
+                                
+                              </a>
+                            </li>
+                          
+                        
+
+                        
+                        
+                          
+                            <li >
+                              <a class="sidenav-item-link" href="modal.html">
+                                <span class="nav-text">Modal</span>
+                                
+                              </a>
+                            </li>
+                          
+                        
+
+                        
+                        
+                          
+                            <li >
+                              <a class="sidenav-item-link" href="pagination.html">
+                                <span class="nav-text">Pagination</span>
+                                
+                              </a>
+                            </li>
+                          
+                        
+
+                        
+                        
+                          
+                            <li >
+                              <a class="sidenav-item-link" href="popover-tooltip.html">
+                                <span class="nav-text">Popover & Tooltip</span>
+                                
+                              </a>
+                            </li>
+                          
+                        
+
+                        
+                        
+                          
+                            <li >
+                              <a class="sidenav-item-link" href="progress-bar.html">
+                                <span class="nav-text">Progress Bar</span>
+                                
+                              </a>
+                            </li>
+                          
+                        
+
+                        
+                        
+                          
+                            <li >
+                              <a class="sidenav-item-link" href="spinner.html">
+                                <span class="nav-text">Spinner</span>
+                                
+                              </a>
+                            </li>
+                          
+                        
+
+                        
+                        
+                          
+                            <li >
+                              <a class="sidenav-item-link" href="switches.html">
+                                <span class="nav-text">Switches</span>
+                                
+                              </a>
+                            </li>
+                          
+                        
+
+                        
+                        
+                        <li  class="has-sub" >
+                          <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#tables"
+                            aria-expanded="false" aria-controls="tables">
+                            <span class="nav-text">Tables</span> <b class="caret"></b>
+                          </a>
+                          <ul  class="collapse"  id="tables">
+                            <div class="sub-menu">
+                              
+                              <li >
+                                <a href="bootstarp-tables.html">Bootstrap Tables</a>
+                              </li>
+                              
+                              <li >
+                                <a href="data-tables.html">Data Tables</a>
+                              </li>
+                              
+                            </div>
+                          </ul>
+                        </li>
+                        
+
+                        
+                        
+                          
+                            <li >
+                              <a class="sidenav-item-link" href="tab.html">
+                                <span class="nav-text">Tab</span>
+                                
+                              </a>
+                            </li>
+                          
+                        
+
+                        
+                        
+                          
+                            <li >
+                              <a class="sidenav-item-link" href="toaster.html">
+                                <span class="nav-text">Toaster</span>
+                                
+                              </a>
+                            </li>
+                          
+                        
+
+                        
+                        
+                        <li  class="has-sub" >
+                          <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#icons"
+                            aria-expanded="false" aria-controls="icons">
+                            <span class="nav-text">Icons</span> <b class="caret"></b>
+                          </a>
+                          <ul  class="collapse"  id="icons">
+                            <div class="sub-menu">
+                              
+                              <li >
+                                <a href="material-icons.html">Material Icon</a>
+                              </li>
+                              
+                              <li >
+                                <a href="flag-icons.html">Flag Icon</a>
+                              </li>
+                              
+                            </div>
+                          </ul>
+                        </li>
+                        
+
+                        
+                        
+                        <li  class="has-sub" >
+                          <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#forms"
+                            aria-expanded="false" aria-controls="forms">
+                            <span class="nav-text">Forms</span> <b class="caret"></b>
+                          </a>
+                          <ul  class="collapse"  id="forms">
+                            <div class="sub-menu">
+                              
+                              <li >
+                                <a href="basic-input.html">Basic Input</a>
+                              </li>
+                              
+                              <li >
+                                <a href="input-group.html">Input Group</a>
+                              </li>
+                              
+                              <li >
+                                <a href="checkbox-radio.html">Checkbox & Radio</a>
+                              </li>
+                              
+                              <li >
+                                <a href="form-validation.html">Form Validation</a>
+                              </li>
+                              
+                              <li >
+                                <a href="form-advance.html">Form Advance</a>
+                              </li>
+                              
+                            </div>
+                          </ul>
+                        </li>
+                        
+
+                        
+                        
+                        <li  class="has-sub" >
+                          <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#maps"
+                            aria-expanded="false" aria-controls="maps">
+                            <span class="nav-text">Maps</span> <b class="caret"></b>
+                          </a>
+                          <ul  class="collapse"  id="maps">
+                            <div class="sub-menu">
+                              
+                              <li >
+                                <a href="google-maps.html">Google Map</a>
+                              </li>
+                              
+                              <li >
+                                <a href="vector-maps.html">Vector Map</a>
+                              </li>
+                              
+                            </div>
+                          </ul>
+                        </li>
+                        
+
+                        
+                        
+                        <li  class="has-sub" >
+                          <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#widgets"
+                            aria-expanded="false" aria-controls="widgets">
+                            <span class="nav-text">Widgets</span> <b class="caret"></b>
+                          </a>
+                          <ul  class="collapse"  id="widgets">
+                            <div class="sub-menu">
+                              
+                              <li >
+                                <a href="widgets-general.html">General Widget</a>
+                              </li>
+                              
+                              <li >
+                                <a href="widgets-chart.html">Chart Widget</a>
+                              </li>
+                              
+                            </div>
+                          </ul>
+                        </li>
+                        
+
+                        
+                      </div>
+                    </ul>
+                  </li>
+                
+
+                
+
+                
+                  <li  class="has-sub" >
+                    <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#charts"
+                      aria-expanded="false" aria-controls="charts">
+                      <i class="mdi mdi-chart-pie"></i>
+                      <span class="nav-text">Charts</span> <b class="caret"></b>
+                    </a>
+                    <ul  class="collapse"  id="charts"
+                      data-parent="#sidebar-menu">
+                      <div class="sub-menu">
+                        
+                        
+                          
+                            <li >
+                              <a class="sidenav-item-link" href="apex-charts.html">
+                                <span class="nav-text">Apex Charts</span>
+                                
+                              </a>
+                            </li>
+                          
+                        
+
+                        
+                      </div>
+                    </ul>
+                  </li>
+                
+
+                
+
+                
+                  <li class="section-title">
+                    Pages
+                  </li>
+                
+
+                
+
+                
+                  <li  class="has-sub" >
+                    <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#users"
+                      aria-expanded="false" aria-controls="users">
+                      <i class="mdi mdi-image-filter-none"></i>
+                      <span class="nav-text">User</span> <b class="caret"></b>
+                    </a>
+                    <ul  class="collapse"  id="users"
+                      data-parent="#sidebar-menu">
+                      <div class="sub-menu">
+                        
+                        
+                          
+                            <li >
+                              <a class="sidenav-item-link" href="user-profile.html">
+                                <span class="nav-text">User Profile</span>
+                                
+                              </a>
+                            </li>
+                          
+                        
+
+                        
+                        
+                          
+                            <li >
+                              <a class="sidenav-item-link" href="user-activities.html">
+                                <span class="nav-text">User Activities</span>
+                                
+                              </a>
+                            </li>
+                          
+                        
+
+                        
+                        
+                          
+                            <li >
+                              <a class="sidenav-item-link" href="user-profile-settings.html">
+                                <span class="nav-text">User Profile Settings</span>
+                                
+                              </a>
+                            </li>
+                          
+                        
+
+                        
+                        
+                          
+                            <li >
+                              <a class="sidenav-item-link" href="user-account-settings.html">
+                                <span class="nav-text">User Account Settings</span>
+                                
+                              </a>
+                            </li>
+                          
+                        
+
+                        
+                        
+                          
+                            <li >
+                              <a class="sidenav-item-link" href="user-planing-settings.html">
+                                <span class="nav-text">User Planing Settings</span>
+                                
+                              </a>
+                            </li>
+                          
+                        
+
+                        
+                        
+                          
+                            <li >
+                              <a class="sidenav-item-link" href="user-billing.html">
+                                <span class="nav-text">User billing</span>
+                                
+                              </a>
+                            </li>
+                          
+                        
+
+                        
+                        
+                          
+                            <li >
+                              <a class="sidenav-item-link" href="user-notify-settings.html">
+                                <span class="nav-text">User Notify Settings</span>
+                                
+                              </a>
+                            </li>
+                          
+                        
+
+                        
+                      </div>
+                    </ul>
+                  </li>
+                
+
+                
+
+                
+                  <li  class="has-sub" >
+                    <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#authentication"
+                      aria-expanded="false" aria-controls="authentication">
+                      <i class="mdi mdi-account"></i>
+                      <span class="nav-text">Authentication</span> <b class="caret"></b>
+                    </a>
+                    <ul  class="collapse"  id="authentication"
+                      data-parent="#sidebar-menu">
+                      <div class="sub-menu">
+                        
+                        
+                          
+                            <li >
+                              <a class="sidenav-item-link" href="sign-in.html">
+                                <span class="nav-text">Sign In</span>
+                                
+                              </a>
+                            </li>
+                          
+                        
+
+                        
+                        
+                          
+                            <li >
+                              <a class="sidenav-item-link" href="sign-up.html">
+                                <span class="nav-text">Sign Up</span>
+                                
+                              </a>
+                            </li>
+                          
+                        
+
+                        
+                        
+                          
+                            <li >
+                              <a class="sidenav-item-link" href="reset-password.html">
+                                <span class="nav-text">Reset Password</span>
+                                
+                              </a>
+                            </li>
+                          
+                        
+
+                        
+                      </div>
+                    </ul>
+                  </li>
+                
+
+                
+
+                
+                  <li  class="has-sub" >
+                    <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#other-page"
+                      aria-expanded="false" aria-controls="other-page">
+                      <i class="mdi mdi-file-multiple"></i>
+                      <span class="nav-text">Other pages</span> <b class="caret"></b>
+                    </a>
+                    <ul  class="collapse"  id="other-page"
+                      data-parent="#sidebar-menu">
+                      <div class="sub-menu">
+                        
+                        
+                          
+                            <li >
+                              <a class="sidenav-item-link" href="invoice.html">
+                                <span class="nav-text">Invoice</span>
+                                
+                              </a>
+                            </li>
+                          
+                        
+
+                        
+                        
+                          
+                            <li >
+                              <a class="sidenav-item-link" href="404.html">
+                                <span class="nav-text">404 page</span>
+                                
+                              </a>
+                            </li>
+                          
+                        
+
+                        
+                        
+                          
+                            <li >
+                              <a class="sidenav-item-link" href="page-comingsoon.html">
+                                <span class="nav-text">Coming Soon</span>
+                                
+                              </a>
+                            </li>
+                          
+                        
+
+                        
+                        
+                          
+                            <li >
+                              <a class="sidenav-item-link" href="page-maintenance.html">
+                                <span class="nav-text">Maintenance</span>
+                                
+                              </a>
+                            </li>
+                          
+                        
+
+                        
+                      </div>
+                    </ul>
+                  </li>
+                
+
+                
+
+                
+                  <li class="section-title">
+                    Documentation
+                  </li>
+                
+
+                
+
+                
+                  <li
+                   >
+                    <a class="sidenav-item-link" href="getting-started.html">
+                      <i class="mdi mdi-airplane"></i>
+                      <span class="nav-text">Getting Started</span>
+                    </a>
+                  </li>
+                
+
+                
+
+                
+                  <li  class="has-sub" >
+                    <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#customization"
+                      aria-expanded="false" aria-controls="customization">
+                      <i class="mdi mdi-square-edit-outline"></i>
+                      <span class="nav-text">Customization</span> <b class="caret"></b>
+                    </a>
+                    <ul  class="collapse"  id="customization"
+                      data-parent="#sidebar-menu">
+                      <div class="sub-menu">
+                        
+                        
+                          
+                            <li >
+                              <a class="sidenav-item-link" href="navbar-customization.html">
+                                <span class="nav-text">Navbar</span>
+                                
+                              </a>
+                            </li>
+                          
+                        
+
+                        
+                        
+                          
+                            <li >
+                              <a class="sidenav-item-link" href="sidebar-customization.html">
+                                <span class="nav-text">Sidebar</span>
+                                
+                              </a>
+                            </li>
+                          
+                        
+
+                        
+                        
+                          
+                            <li >
+                              <a class="sidenav-item-link" href="styling.html">
+                                <span class="nav-text">Styling</span>
+                                
+                              </a>
+                            </li>
+                          
+                        
+
+                        
+                      </div>
+                    </ul>
+                  </li>
+                
+
+                
+              </ul>
+
+            </div>
+
+            <div class="sidebar-footer">
+              <div class="sidebar-footer-content">
+                <ul class="d-flex">
+                  <li>
+                    <a href="user-account-settings.html" data-toggle="tooltip" title="Profile settings"><i class="mdi mdi-settings"></i></a></li>
+                  <li>
+                    <a href="#" data-toggle="tooltip" title="No chat messages"><i class="mdi mdi-chat-processing"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </aside>
+
+      
+
+      <!-- ====================================
+      ——— PAGE WRAPPER
+      ===================================== -->
+      <div class="page-wrapper">
+        
+          <!-- Header -->
+          <header class="main-header" id="header">
+            <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
+              <!-- Sidebar toggle button -->
+              <button id="sidebar-toggler" class="sidebar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+              </button>
+
+              <span class="page-title">dashboard</span>
+
+              <div class="navbar-right ">
+
+                <!-- search form -->
+                <div class="search-form">
+                  <form action="index.html" method="get">
+                    <div class="input-group input-group-sm" id="input-group-search">
+                      <input type="text" autocomplete="off" name="query" id="search-input" class="form-control" placeholder="Search..." />
+                      <div class="input-group-append">
+                        <button class="btn" type="button">/</button>
+                      </div>
+                    </div>
+                  </form>
+                  <ul class="dropdown-menu dropdown-menu-search">
+
+                    <li class="nav-item">
+                      <a class="nav-link" href="index.html">Morbi leo risus</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="index.html">Dapibus ac facilisis in</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="index.html">Porta ac consectetur ac</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="index.html">Vestibulum at eros</a>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+                <ul class="nav navbar-nav">
+                  <!-- Offcanvas -->
+                  <li class="custom-dropdown">
+                    <a class="offcanvas-toggler active custom-dropdown-toggler" data-offcanvas="contact-off" href="javascript:" >
+                      <i class="mdi mdi-contacts icon"></i>
+                    </a>
+                  </li>
+                  <li class="custom-dropdown">
+                    <button class="notify-toggler custom-dropdown-toggler">
+                      <i class="mdi mdi-bell-outline icon"></i>
+                      <span class="badge badge-xs rounded-circle">21</span>
+                    </button>
+                    <div class="dropdown-notify">
+
+                      <header>
+                        <div class="nav nav-underline" id="nav-tab" role="tablist">
+                          <a class="nav-item nav-link active" id="all-tabs" data-toggle="tab" href="#all" role="tab" aria-controls="nav-home"
+                            aria-selected="true">All (5)</a>
+                          <a class="nav-item nav-link" id="message-tab" data-toggle="tab" href="#message" role="tab" aria-controls="nav-profile"
+                            aria-selected="false">Msgs (4)</a>
+                          <a class="nav-item nav-link" id="other-tab" data-toggle="tab" href="#other" role="tab" aria-controls="nav-contact"
+                            aria-selected="false">Others (3)</a>
+                        </div>
+                      </header>
+
+                      <div class="" data-simplebar style="height: 325px;">
+                        <div class="tab-content" id="myTabContent">
+
+                          <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tabs">
+
+                            <div class="media media-sm bg-warning-10 p-4 mb-0">
+                              <div class="media-sm-wrapper">
+                                <a href="user-profile.html">
+                                  <img src="images/user/user-sm-02.jpg" alt="User Image">
+                                </a>
+                              </div>
+                              <div class="media-body">
+                                <a href="user-profile.html">
+                                  <span class="title mb-0">John Doe</span>
+                                  <span class="discribe">Extremity sweetness difficult behaviour he of. On disposal of as landlord horrible. Afraid at highly months do things on at.</span>
+                                  <span class="time">
+                                    <time>Just now</time>...
+                                  </span>
+                                </a>
+                              </div>
+                            </div>
+
+                            <div class="media media-sm p-4 bg-light mb-0">
+                              <div class="media-sm-wrapper bg-primary">
+                                <a href="user-profile.html">
+                                  <i class="mdi mdi-calendar-check-outline"></i>
+                                </a>
+                              </div>
+                              <div class="media-body">
+                                <a href="user-profile.html">
+                                  <span class="title mb-0">New event added</span>
+                                  <span class="discribe">1/3/2014 (1pm - 2pm)</span>
+                                  <span class="time">
+                                    <time>10 min ago...</time>...
+                                  </span>
+                                </a>
+                              </div>
+                            </div>
+
+                            <div class="media media-sm p-4 mb-0">
+                              <div class="media-sm-wrapper">
+                                <a href="user-profile.html">
+                                  <img src="images/user/user-sm-03.jpg" alt="User Image">
+                                </a>
+                              </div>
+                              <div class="media-body">
+                                <a href="user-profile.html">
+                                  <span class="title mb-0">Sagge Hudson</span>
+                                  <span class="discribe">On disposal of as landlord Afraid at highly months do things on at.</span>
+                                  <span class="time">
+                                    <time>1 hrs ago</time>...
+                                  </span>
+                                </a>
+                              </div>
+                            </div>
+
+                            <div class="media media-sm p-4 mb-0">
+                              <div class="media-sm-wrapper bg-info-dark">
+                                <a href="user-profile.html">
+                                  <i class="mdi mdi-account-multiple-check"></i>
+                                </a>
+                              </div>
+                              <div class="media-body">
+                                <a href="user-profile.html">
+                                  <span class="title mb-0">Add request</span>
+                                  <span class="discribe">Add Dany Jones as your contact.</span>
+                                  <div class="buttons">
+                                    <a href="#" class="btn btn-sm btn-success shadow-none text-white">accept</a>
+                                    <a href="#" class="btn btn-sm shadow-none">delete</a>
+                                  </div>
+                                  <span class="time">
+                                    <time>6 hrs ago</time>...
+                                  </span>
+                                </a>
+                              </div>
+                            </div>
+
+                            <div class="media media-sm p-4 mb-0">
+                              <div class="media-sm-wrapper bg-info">
+                                <a href="user-profile.html">
+                                  <i class="mdi mdi-playlist-check"></i>
+                                </a>
+                              </div>
+                              <div class="media-body">
+                                <a href="user-profile.html">
+                                  <span class="title mb-0">Task complete</span>
+                                  <span class="discribe">Afraid at highly months do things on at.</span>
+                                  <span class="time">
+                                    <time>1 hrs ago</time>...
+                                  </span>
+                                </a>
+                              </div>
+                            </div>
+
+                          </div>
+
+                          <div class="tab-pane fade" id="message" role="tabpanel" aria-labelledby="message-tab">
+
+                            <div class="media media-sm p-4 mb-0">
+                              <div class="media-sm-wrapper">
+                                <a href="user-profile.html">
+                                  <img src="images/user/user-sm-01.jpg" alt="User Image">
+                                </a>
+                              </div>
+                              <div class="media-body">
+                                <a href="user-profile.html">
+                                  <span class="title mb-0">Selena Wagner</span>
+                                  <span class="discribe">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+                                  <span class="time">
+                                    <time>15 min ago</time>...
+                                  </span>
+                                </a>
+                              </div>
+                            </div>
+
+                            <div class="media media-sm p-4 mb-0">
+                              <div class="media-sm-wrapper">
+                                <a href="user-profile.html">
+                                  <img src="images/user/user-sm-03.jpg" alt="User Image">
+                                </a>
+                              </div>
+                              <div class="media-body">
+                                <a href="user-profile.html">
+                                  <span class="title mb-0">Sagge Hudson</span>
+                                  <span class="discribe">On disposal of as landlord Afraid at highly months do things on at.</span>
+                                  <span class="time">
+                                    <time>1 hrs ago</time>...
+                                  </span>
+                                </a>
+                              </div>
+                            </div>
+
+                            <div class="media media-sm bg-warning-10 p-4 mb-0">
+                              <div class="media-sm-wrapper">
+                                <a href="user-profile.html">
+                                  <img src="images/user/user-sm-02.jpg" alt="User Image">
+                                </a>
+                              </div>
+                              <div class="media-body">
+                                <a href="user-profile.html">
+                                  <span class="title mb-0">John Doe</span>
+                                  <span class="discribe">Extremity sweetness difficult behaviour he of. On disposal of as landlord horrible. Afraid
+                                    at highly months do things on at.</span>
+                                  <span class="time">
+                                    <time>Just now</time>...
+                                  </span>
+                                </a>
+                              </div>
+                            </div>
+
+                            <div class="media media-sm p-4 mb-0">
+                              <div class="media-sm-wrapper">
+                                <a href="user-profile.html">
+                                  <img src="images/user/user-sm-04.jpg" alt="User Image">
+                                </a>
+                              </div>
+                              <div class="media-body">
+                                <a href="user-profile.html">
+                                  <span class="title mb-0">Albrecht Straub</span>
+                                  <span class="discribe"> Beatae quia natus assumenda laboriosam, nisi perferendis aliquid consectetur expedita non tenetur.</span>
+                                  <span class="time">
+                                    <time>Just now</time>...
+                                  </span>
+                                </a>
+                              </div>
+                            </div>
+
+                          </div>
+                          <div class="tab-pane fade" id="other" role="tabpanel" aria-labelledby="contact-tab">
+
+                            <div class="media media-sm p-4 bg-light mb-0">
+                              <div class="media-sm-wrapper bg-primary">
+                                <a href="user-profile.html">
+                                  <i class="mdi mdi-calendar-check-outline"></i>
+                                </a>
+                              </div>
+                              <div class="media-body">
+                                <a href="user-profile.html">
+                                  <span class="title mb-0">New event added</span>
+                                  <span class="discribe">1/3/2014 (1pm - 2pm)</span>
+                                  <span class="time">
+                                    <time>10 min ago...</time>...
+                                  </span>
+                                </a>
+                              </div>
+                            </div>
+
+                            <div class="media media-sm p-4 mb-0">
+                              <div class="media-sm-wrapper bg-info-dark">
+                                <a href="user-profile.html">
+                                  <i class="mdi mdi-account-multiple-check"></i>
+                                </a>
+                              </div>
+                              <div class="media-body">
+                                <a href="user-profile.html">
+                                  <span class="title mb-0">Add request</span>
+                                  <span class="discribe">Add Dany Jones as your contact.</span>
+                                  <div class="buttons">
+                                    <a href="#" class="btn btn-sm btn-success shadow-none text-white">accept</a>
+                                    <a href="#" class="btn btn-sm shadow-none">delete</a>
+                                  </div>
+                                  <span class="time">
+                                    <time>6 hrs ago</time>...
+                                  </span>
+                                </a>
+                              </div>
+                            </div>
+
+                            <div class="media media-sm p-4 mb-0">
+                              <div class="media-sm-wrapper bg-info">
+                                <a href="user-profile.html">
+                                  <i class="mdi mdi-playlist-check"></i>
+                                </a>
+                              </div>
+                              <div class="media-body">
+                                <a href="user-profile.html">
+                                  <span class="title mb-0">Task complete</span>
+                                  <span class="discribe">Afraid at highly months do things on at.</span>
+                                  <span class="time">
+                                    <time>1 hrs ago</time>...
+                                  </span>
+                                </a>
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+
+                      <footer class="border-top dropdown-notify-footer">
+                        <div class="d-flex justify-content-between align-items-center py-2 px-4">
+                          <span>Last updated 3 min ago</span>
+                          <a id="refress-button" href="javascript:" class="btn mdi mdi-cached btn-refress"></a>
+                        </div>
+                      </footer>
+                    </div>
+                  </li>
+                  <!-- User Account -->
+                  <li class="dropdown user-menu">
+                    <button class="dropdown-toggle nav-link" data-toggle="dropdown">
+                      <img src="images/user/user-xs-01.jpg" class="user-image rounded-circle" alt="User Image" />
+                      <span class="d-none d-lg-inline-block">John Doe</span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                      <li>
+                        <a class="dropdown-link-item" href="user-profile.html">
+                          <i class="mdi mdi-account-outline"></i>
+                          <span class="nav-text">My Profile</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-link-item" href="email-inbox.html">
+                          <i class="mdi mdi-email-outline"></i>
+                          <span class="nav-text">Message</span>
+                          <span class="badge badge-pill badge-primary">24</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-link-item" href="user-activities.html">
+                          <i class="mdi mdi-diamond-stone"></i>
+                          <span class="nav-text">Activitise</span></a>
+                      </li>
+                      <li>
+                        <a class="dropdown-link-item" href="user-account-settings.html">
+                          <i class="mdi mdi-settings"></i>
+                          <span class="nav-text">Account Setting</span>
+                        </a>
+                      </li>
+
+                      <li class="dropdown-footer">
+                        <a class="dropdown-link-item" href="/logout"> <i class="mdi mdi-logout"></i> Log Out </a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+
+
+          </header>
+
+        <!-- ====================================
+        ——— CONTENT WRAPPER
+        ===================================== -->
+        <div class="content-wrapper">
+          <div class="content">               
+
+            
+            
+
+
+
+
+
+
+            <div class="row">
+              <div class="col-xl-6">
+                
+                <!-- Income and Express -->
+                <div class="card card-default">
+                  <div class="card-header">
+                    <h2>WebSocket Status:</h2>
+                      <div id="message"><%= message %></div>
+           
+
+                  </div>
+                  <br>
+                  Decimal Value: <div id="DecimalValue"></div>
+                </div>
+
+
+              </div>
+              <div class="col-xl-6">
+                <!-- Current Users  -->
+
+
+
+                   <!-- Income and Express -->
+                   <div class="card card-default">
+                    <div class="card-header">
+                      <h2>History Log</h2>
+                  
+
+                    </div>
+                  </div>
+             </div>
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+              
+
+
+
+            </div>
+
+
+
+
+                  <!-- Top Statistics -->
+
+
+
+
+                  <div class="row">
+                    <div class="col-xl-3 col-sm-6">
+                      <div class="card card-default card-mini">
+                        <div class="card-header">
+                          <h2>Temperature Graph</h2>
+                          <div class="dropdown">
+                            <a class="dropdown-toggle icon-burger-mini" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            </a>
+
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+                              <a class="dropdown-item" href="#">Action</a>
+                              <a class="dropdown-item" href="#">Another action</a>
+                              <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                          </div>
+                          <div class="sub-title">
+                            <span class="mr-1">OMRON CP1E PLC</span> |
+                            <span class="mx-1">45%</span>
+                            <i class="mdi mdi-arrow-up-bold text-success"></i>
+                          </div>
+                        </div>
+                        <div class="card-body">
+                          <div class="chart-wrapper">
+                            <div>
+                              <div id="spline-area-1"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-3 col-sm-6">
+                      <div class="card card-default card-mini">
+                        <div class="card-header">
+                          <h2>Pressure Graph</h2>
+                          <div class="dropdown">
+                            <a class="dropdown-toggle icon-burger-mini" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            </a>
+
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+                              <a class="dropdown-item" href="#">Action</a>
+                              <a class="dropdown-item" href="#">Another action</a>
+                              <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                          </div>
+                          <div class="sub-title">
+                            <span class="mr-1">OMRON CP1E PLC</span> |
+                            <span class="mx-1">50%</span>
+                            <i class="mdi mdi-arrow-down-bold text-danger"></i>
+                          </div>
+                        </div>
+                        <div class="card-body">
+                          <div class="chart-wrapper">
+                            <div>
+                              <div id="spline-area-2"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-3 col-sm-6">
+                      <div class="card card-default card-mini">
+                        <div class="card-header">
+                          <h2>Water Level Graph</h2>
+                          <div class="dropdown">
+                            <a class="dropdown-toggle icon-burger-mini" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            </a>
+
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+                              <a class="dropdown-item" href="#">Action</a>
+                              <a class="dropdown-item" href="#">Another action</a>
+                              <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                          </div>
+                          <div class="sub-title">
+                            <span class="mr-1">OMRON CP1E PLC</span> |
+                            <span class="mx-1">20%</span>
+                            <i class="mdi mdi-arrow-down-bold text-danger"></i>
+                          </div>
+                        </div>
+                        <div class="card-body">
+                          <div class="chart-wrapper">
+                            <div>
+                              <div id="spline-area-3"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-3 col-sm-6">
+                      <div class="card card-default card-mini">
+                        <div class="card-header">
+                          <h2>Production Graph</h2>
+                          <div class="dropdown">
+                            <a class="dropdown-toggle icon-burger-mini" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            </a>
+
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+                              <a class="dropdown-item" href="#">Action</a>
+                              <a class="dropdown-item" href="#">Another action</a>
+                              <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                          </div>
+                          <div class="sub-title">
+                            <span class="mr-1">Total Output</span> 
+                            <span class="mx-1">35%</span>
+                            <i class="mdi mdi-arrow-up-bold text-success"></i>
+                          </div>
+                        </div>
+                        <div class="card-body">
+                          <div class="chart-wrapper">
+                            <div>
+                              <div id="spline-area-4"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                <div class="row">
+                  <div class="col-xl-3">
+                    
+                    <!-- Income and Express -->
+                    <div class="card card-default">
+                      <div class="card-header">
+                        <h2>Address 100.00</h2>
+                        <div style="width: 100%; height: 250px;">
+                          Current Status: <div id="value-29"></div>
+                          <canvas id="address00Chart"></canvas>
+                        </div>
+
+                      </div>
+
+                    </div>
+
+
+                  </div>
+                  <div class="col-xl-3">
+                    <!-- Current Users  -->
+
+
+
+                       <!-- Income and Express -->
+                       <div class="card card-default">
+                        <div class="card-header">
+                          <h2>Address 100.01</h2>
+                          <div style="width: 100%; height: 250px;">
+                            Current Status: <div id="value-28"></div>
+                            <canvas id="address01Chart"></canvas>
+                          </div>
+  
+                        </div>
+                      </div>
+                 </div>
+
+
+                 <div class="col-xl-3">
+                  <!-- Current Users  -->
+
+
+
+                     <!-- Income and Express -->
+                     <div class="card card-default">
+                      <div class="card-header">
+                        <h2>Address 100.02</h2>
+                        <div style="width: 100%; height: 250px;">
+                          Current Status: <div id="value-27"></div>
+                          <canvas id="address02Chart"></canvas>
+                        </div>
+
+                      </div>
+                    </div>
+               </div>
+
+
+
+
+               <div class="col-xl-3">
+                <!-- Current Users  -->
+
+
+
+                   <!-- Income and Express -->
+                   <div class="card card-default">
+                    <div class="card-header">
+                      <h2>Address 100.03</h2>
+                      <div style="width: 100%; height: 250px;">
+                        Current Status: <div id="value-26"></div>
+                        <canvas id="address03Chart"></canvas>
+                      </div>    
+
+                    </div>
+                  </div>
+             </div>
+
+
+
+
+      
+
+
+
+
+                  
+
+
+
+                </div>
+
+
+
+                <div class="row">
+                  <div class="col-xl-3">
+                    <!-- Current Users  -->
+      
+      
+      
+                       <!-- Income and Express -->
+                       <div class="card card-default">
+                        <div class="card-header">
+                          <h2>Address 100.04</h2>
+                          <div style="width: 100%; height: 250px;">
+                            Current Status: <div id="value-21"></div>
+                            <canvas id="address04Chart"></canvas>
+                          </div>
+      
+                        </div>
+                      </div>
+                 </div>
+      
+      
+      
+      
+                 <div class="col-xl-3">
+                  <!-- Current Users  -->
+      
+      
+      
+                     <!-- Income and Express -->
+                     <div class="card card-default">
+                      <div class="card-header">
+                        <h2>Address 100.05</h2>
+                        <div style="width: 100%; height: 250px;">
+                          Current Status: <div id="value-20"></div>
+                          <canvas id="address05Chart"></canvas>
+                        </div>   
+                      </div>
+      
+                      </div>
+                    </div>
+
+
+
+                             <div class="col-xl-3">
+                    
+                    <!-- Income and Express -->
+                    <div class="card card-default">
+                      <div class="card-header">
+                        <h2>Address 100.06</h2>
+                        <div style="width: 100%; height: 250px;">
+                          Current Status: <div id="value-19"></div>
+                          <canvas id="address06Chart"></canvas>
+                        </div>
+
+                      </div>
+
+                    </div>
+
+
+                  </div>
+
+
+
+                  <div class="col-xl-3">
+                    <!-- Current Users  -->
+
+
+
+                       <!-- Income and Express -->
+                       <div class="card card-default">
+                        <div class="card-header">
+                          <h2>Address 100.07</h2>
+                       
+                          <div style="width: 100%; height: 250px;">
+                            Current Status: <div id="value-18"></div>
+                            <canvas id="address07Chart"></canvas>
+                          </div>
+                        </div>
+                      </div>
+                 </div>
+
+
+
+                  <!--Second Row-->
+               </div>
+
+
+
+               
+
+
+
+
+               
+      
+                </div>
+
+
+
+
+                <div class="row" style="margin-left:10px;">
+         
+                 
+
+                 <div class="col-xl-3">
+                  <!-- Current Users  -->
+
+
+
+                     <!-- Income and Express -->
+                     <div class="card card-default">
+                      <div class="card-header">
+                        <h2>Address 100.08</h2>
+                     
+                        <div style="width: 100%; height: 250px;">
+                          Current Status: <div id="value-13"></div>
+                          <canvas id="address08Chart"></canvas>
+                        </div>
+                      </div>
+                    </div>
+               </div>
+
+
+
+
+               <div class="col-xl-3">
+                <!-- Current Users  -->
+
+
+
+                   <!-- Income and Express -->
+                   <div class="card card-default">
+                    <div class="card-header">
+                      <h2>Address 100.09</h2>
+                      <div style="width: 100%; height: 250px;">
+                        Current Status: <div id="value-12"></div>
+                        <canvas id="address09Chart"></canvas>
+                      </div>
+
+                    </div>
+                  </div>
+             </div>
+
+
+
+
+             <div class="col-xl-3">
+              <!-- Current Users  -->
+
+
+
+                 <!-- Income and Express -->
+                 <div class="card card-default">
+                  <div class="card-header">
+                    <h2>Address 100.10</h2>
+                    <div style="width: 100%; height: 250px;">
+                      Current Status: <div id="value-11"></div>
+                      <canvas id="address10Chart"></canvas>
+                    </div>
+
+                  </div>
+                </div>
+           </div>
+
+
+
+
+           <div class="col-xl-3">
+            <!-- Current Users  -->
+
+
+
+               <!-- Income and Express -->
+               <div class="card card-default">
+                <div class="card-header">
+                  <h2>Address 100.11</h2>
+                  <div style="width: 100%; height: 250px;">
+                    Current Status: <div id="value-10"></div>
+                    <canvas id="address11Chart"></canvas>
+                  </div>s
+
+                </div>
+              </div>
+         </div>
+
+
+
+
+        </div>
+
+                  
+
+
+
+
+
+                <div class="row" style="margin-left:10px;">
+                  <div class="col-xl-3">
+                    
+                    <!-- Income and Express -->
+                    <div class="card card-default">
+                      <div class="card-header">
+                        <h2>Address 100.12</h2>
+                        <div style="width: 100%; height: 250px;">
+                          Current Status: <div id="value-5"></div>
+                          <canvas id="address12Chart"></canvas>
+                        </div>
+
+                      </div>
+
+                    </div>
+
+
+                  </div>
+                  <div class="col-xl-3">
+                    <!-- Current Users  -->
+
+
+
+                       <!-- Income and Express -->
+                       <div class="card card-default">
+                        <div class="card-header">
+                          <h2>Address 100.13</h2>
+                          <div style="width: 100%; height: 250px;">
+s                            Current Status: <div id="value-4"></div>
+                            <canvas id="address13Chart"></canvas>
+                          </div>
+  
+                        </div>
+                      </div>
+                 </div>
+
+
+                 <div class="col-xl-3">
+                  <!-- Current Users  -->
+
+
+
+                     <!-- Income and Express -->
+                     <div class="card card-default">
+                      <div class="card-header">
+                        <h2>Address 100.14</h2>
+                        <div style="width: 100%; height: 250px;">
+                          Current Status: <div id="value-3"></div>
+                          <canvas id="address14Chart"></canvas>
+                        </div>   
+
+                      </div>
+                    </div>
+               </div>
+
+
+
+
+               <div class="col-xl-3">
+                <!-- Current Users  -->
+
+
+
+                   <!-- Income and Express -->
+                   <div class="card card-default">
+                    <div class="card-header">
+                      <h2>Address 100.15</h2>
+                   
+                      <div style="width: 100%; height: 250px;">
+                        Current Status: <div id="value-2"></div>
+                        <canvas id="address15Chart"></canvas>
+                      </div>
+                    </div>
+                  </div>
+             </div>
+
+
+
+
+      
+
+
+
+
+
+
+
+                  
+
+
+
+                </div>
+
+
+
+                
+<!--           
+
+              <div class="row">
+                <div class="col-xl-8">
+                  
+               
+              
+                     
+                <div class="col-xl-4">
+                  
+                                 
+        
+
+                </div>
+              </div>
+            -->
+              <!-- Stock Modal -->
+              <div class="modal fade modal-stock" id="modal-stock" aria-labelledby="modal-stock" aria-hidden="true">
+                <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+                  <form action="#">
+                    <div class="modal-content">
+                      <div class="modal-header align-items-center p3 p-md-5">
+                        <h2 class="modal-title" id="exampleModalGridTitle">Add Stock</h2>
+                        <div>
+                          <button type="button" class="btn btn-light btn-pill mr-1 mr-md-2" data-dismiss="modal"> cancel </button>
+                          <button type="submit" class="btn btn-primary  btn-pill" data-dismiss="modal"> save </button>
+                        </div>
+
+                      </div>
+                      <div class="modal-body p3 p-md-5">
+                        <div class="row">
+                          <div class="col-lg-8">
+                            <h3 class="h5 mb-5">Product Information</h3>
+                            <div class="form-group mb-5">
+                              <label for="new-product">Product Title</label>
+                              <input type="text" class="form-control" id="new-product" placeholder="Add Product">
+                            </div>
+                            <div class="form-row mb-4">
+                              <div class="col">
+                                <label for="price">Price</label>
+                                <div class="input-group">
+                                  <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon1">$</span>
+                                  </div>
+                                  <input type="text" class="form-control" id="price" placeholder="Price" aria-label="Price"
+                                    aria-describedby="basic-addon1">
+                                </div>
+                              </div>
+                              <div class="col">
+                                <label for="sale-price">Sale Price</label>
+                                <div class="input-group">
+                                  <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon1">$</span>
+                                  </div>
+                                  <input type="text" class="form-control" id="sale-price" placeholder="Sale Price" aria-label="SalePrice"
+                                    aria-describedby="basic-addon1">
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="product-type mb-3 ">
+                              <label class="d-block" for="sale-price">Product Type <i class="mdi mdi-help-circle-outline"></i> </label>
+                              <div>
+
+                                <div class="custom-control custom-radio d-inline-block mr-3 mb-3">
+                                  <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input" checked="checked">
+                                  <label class="custom-control-label" for="customRadio1">Physical Good</label>
+                                </div>
+
+                                <div class="custom-control custom-radio d-inline-block mr-3 mb-3">
+                                  <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                                  <label class="custom-control-label" for="customRadio2">Digital Good</label>
+                                </div>
+
+                                <div class="custom-control custom-radio d-inline-block mr-3 mb-3">
+                                  <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input">
+                                  <label class="custom-control-label" for="customRadio3">Service</label>
+                                </div>
+
+                              </div>
+                            </div>
+
+                            <div class="editor">
+                              <label class="d-block" for="sale-price">Description <i class="mdi mdi-help-circle-outline"></i></label>
+                              <div id="standalone">
+                                <div id="toolbar">
+                                  <span class="ql-formats">
+                                    <select class="ql-font"></select>
+                                    <select class="ql-size"></select>
+                                  </span>
+                                  <span class="ql-formats">
+                                    <button class="ql-bold"></button>
+                                    <button class="ql-italic"></button>
+                                    <button class="ql-underline"></button>
+                                  </span>
+                                  <span class="ql-formats">
+                                    <select class="ql-color"></select>
+                                  </span>
+                                  <span class="ql-formats">
+                                    <button class="ql-blockquote"></button>
+                                  </span>
+                                  <span class="ql-formats">
+                                    <button class="ql-list" value="ordered"></button>
+                                    <button class="ql-list" value="bullet"></button>
+                                    <button class="ql-indent" value="-1"></button>
+                                    <button class="ql-indent" value="+1"></button>
+                                  </span>
+                                  <span class="ql-formats">
+                                    <button class="ql-direction" value="rtl"></button>
+                                    <select class="ql-align"></select>
+                                  </span>
+                                </div>
+                              </div>
+                              <div id="editor"></div>
+
+                              <div class="custom-control custom-checkbox d-inline-block mt-2">
+                                <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                <label class="custom-control-label" for="customCheck2">Hide product from published site</label>
+                              </div>
+
+                            </div>
+
+                          </div>
+                          <div class="col-lg-4">
+                            <div class="custom-file">
+                              <input type="file" class="custom-file-input" id="customFile" placeholder="please imgae here">
+                              <span class="upload-image">Click here to <span class="text-primary">add product image.</span> </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </form>
+                </div>
+              </div>
+</div>
+          
+        </div>
+        
+          <!-- Footer -->
+          <footer class="footer mt-auto">
+            <div class="copyright bg-white">
+              <p>
+                &copy; <span id="copy-year"></span> Copyright Mono Dashboard Bootstrap Template by <a class="text-primary" href="http://www.iamabdus.com/" target="_blank" >Abdus</a>.
+              </p>
+            </div>
+            <script>
+                var d = new Date();
+                var year = d.getFullYear();
+                document.getElementById("copy-year").innerHTML = year;
+            </script>
+          </footer>
+
+      </div>
+    </div>
+    
+                    <!-- Card Offcanvas -->
+                    <div class="card card-offcanvas" id="contact-off" >
+                      <div class="card-header">
+                        <h2>Contacts</h2>
+                        <a href="#" class="btn btn-primary btn-pill px-4">Add New</a>
+                      </div>
+                      <div class="card-body">
+
+                        <div class="mb-4">
+                          <input type="text" class="form-control form-control-lg form-control-secondary rounded-0" placeholder="Search contacts...">
+                        </div>
+
+                        <div class="media media-sm">
+                          <div class="media-sm-wrapper">
+                            <a href="user-profile.html">
+                              <img src="images/user/user-sm-01.jpg" alt="User Image">
+                              <span class="active bg-primary"></span>
+                            </a>
+                          </div>
+                          <div class="media-body">
+                            <a href="user-profile.html">
+                              <span class="title">Selena Wagner</span>
+                              <span class="discribe">Designer</span>
+                            </a>
+                          </div>
+                        </div>
+
+                        <div class="media media-sm">
+                          <div class="media-sm-wrapper">
+                            <a href="user-profile.html">
+                              <img src="images/user/user-sm-02.jpg" alt="User Image">
+                              <span class="active bg-primary"></span>
+                            </a>
+                          </div>
+                          <div class="media-body">
+                            <a href="user-profile.html">
+                              <span class="title">Walter Reuter</span>
+                              <span>Developer</span>
+                            </a>
+                          </div>
+                        </div>
+
+                        <div class="media media-sm">
+                          <div class="media-sm-wrapper">
+                            <a href="user-profile.html">
+                              <img src="images/user/user-sm-03.jpg" alt="User Image">
+                            </a>
+                          </div>
+                          <div class="media-body">
+                            <a href="user-profile.html">
+                              <span class="title">Larissa Gebhardt</span>
+                              <span>Cyber Punk</span>
+                            </a>
+                          </div>
+                        </div>
+
+                        <div class="media media-sm">
+                          <div class="media-sm-wrapper">
+                            <a href="user-profile.html">
+                              <img src="images/user/user-sm-04.jpg" alt="User Image">
+                            </a>
+
+                          </div>
+                          <div class="media-body">
+                            <a href="user-profile.html">
+                              <span class="title">Albrecht Straub</span>
+                              <span>Photographer</span>
+                            </a>
+                          </div>
+                        </div>
+
+                        <div class="media media-sm">
+                          <div class="media-sm-wrapper">
+                            <a href="user-profile.html">
+                              <img src="images/user/user-sm-05.jpg" alt="User Image">
+                              <span class="active bg-danger"></span>
+                            </a>
+                          </div>
+                          <div class="media-body">
+                            <a href="user-profile.html">
+                              <span class="title">Leopold Ebert</span>
+                              <span>Fashion Designer</span>
+                            </a>
+                          </div>
+                        </div>
+
+                        <div class="media media-sm">
+                          <div class="media-sm-wrapper">
+                            <a href="user-profile.html">
+                              <img src="images/user/user-sm-06.jpg" alt="User Image">
+                              <span class="active bg-primary"></span>
+                            </a>
+                          </div>
+                          <div class="media-body">
+                            <a href="user-profile.html">
+                              <span class="title">Selena Wagner</span>
+                              <span>Photographer</span>
+                            </a>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+
+
+
+    
+                    <script src="plugins/jquery/jquery.min.js"></script>
+                    <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+                    <script src="plugins/simplebar/simplebar.min.js"></script>
+                    <script src="https://unpkg.com/hotkeys-js/dist/hotkeys.min.js"></script>
+
+                    
+                    
+                    <script src="plugins/apexcharts/apexcharts.js"></script>
+                    
+                    
+                    
+                    <script src="plugins/DataTables/DataTables-1.10.18/js/jquery.dataTables.min.js"></script>
+                    
+                    
+                    
+                    <script src="plugins/jvectormap/jquery-jvectormap-2.0.3.min.js"></script>
+                    <script src="plugins/jvectormap/jquery-jvectormap-world-mill.js"></script>
+                    <script src="plugins/jvectormap/jquery-jvectormap-us-aea.js"></script>
+                    
+                    
+                    
+                    <script src="plugins/daterangepicker/moment.min.js"></script>
+                    <script src="plugins/daterangepicker/daterangepicker.js"></script>
+                    <script>
+                      jQuery(document).ready(function() {
+                        jQuery('input[name="dateRange"]').daterangepicker({
+                        autoUpdateInput: false,
+                        singleDatePicker: true,
+                        locale: {
+                          cancelLabel: 'Clear'
+                        }
+                      });
+                        jQuery('input[name="dateRange"]').on('apply.daterangepicker', function (ev, picker) {
+                          jQuery(this).val(picker.startDate.format('MM/DD/YYYY'));
+                        });
+                        jQuery('input[name="dateRange"]').on('cancel.daterangepicker', function (ev, picker) {
+                          jQuery(this).val('');
+                        });
+                      });
+                    </script>
+                    
+                    
+                    
+                    <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+                    
+                    
+                    
+                    <script src="plugins/toaster/toastr.min.js"></script>
+
+                    
+                    
+                    <script src="js/mono.js"></script>
+                    <script src="js/chart.js"></script>
+                    <script src="js/map.js"></script>
+                    <script src="js/custom.js"></script>
+
+                    
+
+
+                    <!--  -->
+
+                    <script>
+
+                      let address00Chart; // Define the ampChart variable
+                      const address00Data = []; // Array to store Amp data
+                      
+                      
+                      
+                      
+                      let address01Chart; // Define the ampChart variable
+                      const address01Data = []; // Array to store Amp data
+                      
+                      
+                      
+                      let address02Chart; // Define the ampChart variable
+                      const address02Data = []; // Array to store Amp data
+                      
+                      
+                      let address03Chart; // Define the ampChart variable
+                      const address03Data = []; // Array to store Amp data
+                      
+                      
+                      
+                      let address04Chart; // Define the ampChart variable
+                      const address04Data = []; // Array to store Amp data
+                      
+                      
+                      let address05Chart; // Define the ampChart variable
+                      const address05Data = []; // Array to store Amp data
+                      
+                      
+                      
+                      let address06Chart; // Define the ampChart variable
+                      const address06Data = []; // Array to store Amp data
+                      
+                      
+                      let address07Chart; // Define the ampChart variable
+                      const address07Data = []; // Array to store Amp data
+                      
+                      
+                      
+                      let address08Chart; // Define the ampChart variable
+                      const address08Data = []; // Array to store Amp data
+                      
+                      
+                      
+                      
+                      let address09Chart; // Define the ampChart variable
+                      const address09Data = []; // Array to store Amp data
+                      
+                      
+                      
+                      let address10Chart; // Define the ampChart variable
+                      const address10Data = []; // Array to store Amp data
+                      
+                      
+                      
+                      
+                      let address11Chart; // Define the ampChart variable
+                      const address11Data = []; // Array to store Amp data
+                      
+                      
+                      
+                      
+                      let address12Chart; // Define the ampChart variable
+                      const address12Data = []; // Array to store Amp data
+                      
+                      
+                      
+                      
+                      let address13Chart; // Define the ampChart variable
+                      const address13Data = []; // Array to store Amp data
+                      
+                      
+                      
+                      
+                      let address14Chart; // Define the ampChart variable
+                      const address14Data = []; // Array to store Amp data
+                      
+                      
+                      
+                      let address15Chart; // Define the ampChart variable
+                      const address15Data = []; // Array to store Amp Data
+                      
+                      
+                      
+                      let DecimalChart; // Define the ampChart variable
+                      const DecimalData = []; // Array to store Amp Data
+                      
+                      
+                      
+                      
+                      const recentValues = [];
+                      //
+                      var total_decimal = "";
+                      
+                      
+                      
+     
+                      
+  
+                      
+                      
+                       
+    
+                      //
+                      
+                      
+                      function createAddress00Chart() {
+                        const address00_ctx = document.getElementById('address00Chart').getContext('2d');
+                        address00Chart = new Chart(address00_ctx, {
+                          type: 'line',
+                          data: {
+                            labels: Array.from({ length: address00Data.length }, (_, i) => i + 1),
+                            datasets: [{
+                              label: 'Address 100.00 bits address change over time',
+                              data: address00Data,
+                              backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                              borderColor: 'rgba(255, 99, 132, 1)',
+                              borderWidth: 2,
+                              fill: true,
+                            }],
+                          },
+                          options: {
+                            responsive: true,
+                            maintainAspectRatio: false,
+                            scales: {
+                              y: {
+                                beginAtZero: true,
+                              },
+                            },
+                          },
+                        });
+                      }
+                      
+                      
+                      
+                      
+                      function updateAddress00Chart() {
+                        if (address00Chart) {
+                          address00Chart.data.labels = Array.from({ length: address00Data.length }, (_, i) => i + 1);
+                          address00Chart.data.datasets[0].data = address00Data;
+                          address00Chart.update();
+                        } else {
+                          createAddress00Chart();
+                        }
+                      }
+                      
+                      
+                      
+                       
+                      
+                      function updateData() {
+                       // Remove the oldest value if history exceeds 20 values
+                         // Assuming you have an HTML element with an ID like 'value-2', 'value-3', ...
+                         const elementId = `value-29`;
+                          const element = document.getElementById(elementId);
+                          element.textContent = recentValues[29];
+                              
+                      
+                       if (address00Data.length >= 20) {
+                          address00Data.shift(); // Remove the oldest value
+                        }
+                      
+                        // Add new Amp value to the end of the data array
+                        address00Data.push( element.textContent);
+                      
+                          // Update the Amp chart
+                          updateAddress00Chart();
+                      
+                      }
+                      //
+                      
+                      
+                      
+                      
+                      function createAddress01Chart() {
+                        const address01_ctx = document.getElementById('address01Chart').getContext('2d');
+                        address01Chart = new Chart(address01_ctx, {
+                          type: 'line',
+                          data: {
+                            labels: Array.from({ length: address01Data.length }, (_, i) => i + 1),
+                            datasets: [{
+                              label: 'Address 100.01 bits address change over time',
+                              data: address01Data,
+                              backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                              borderColor: 'rgba(255, 99, 132, 1)',
+                              borderWidth: 2,
+                              fill: true,
+                            }],
+                          },
+                          options: {
+                            responsive: true,
+                            maintainAspectRatio: false,
+                            scales: {
+                              y: {
+                                beginAtZero: true,
+                              },
+                            },
+                          },
+                        });
+                      }
+                      
+                      
+                      
+                      
+                      function updateAddress01Chart() {
+                        if (address01Chart) {
+                          address01Chart.data.labels = Array.from({ length: address01Data.length }, (_, i) => i + 1);
+                          address01Chart.data.datasets[0].data = address01Data;
+                          address01Chart.update();
+                        } else {
+                          createAddress01Chart();
+                        }
+                      }
+                      
+                      
+                      
+                       
+                      
+                      function updateData_1() {
+                       // Remove the oldest value if history exceeds 20 values
+                         // Assuming you have an HTML element with an ID like 'value-2', 'value-3', ...
+                         const elementId = `value-28`;
+                          const element = document.getElementById(elementId);
+                          element.textContent = recentValues[28];
+                              
+                      
+                       if (address01Data.length >= 20) {
+                          address01Data.shift(); // Remove the oldest value
+                        }
+                      
+                        // Add new Amp value to the end of the data array
+                        address01Data.push( element.textContent);
+                      
+                          // Update the Amp chart
+                          updateAddress01Chart();
+                      
+                      }
+                      
+                      //
+                      //
+                      /*
+                      
+                      
+                      
+                      
+                      
+                      */
+                      
+                      function createAddress01Chart() {
+                        const address01_ctx = document.getElementById('address01Chart').getContext('2d');
+                        address01Chart = new Chart(address01_ctx, {
+                          type: 'line',
+                          data: {
+                            labels: Array.from({ length: address01Data.length }, (_, i) => i + 1),
+                            datasets: [{
+                              label: 'Address 100.01 bits address change over time',
+                              data: address01Data,
+                              backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                              borderColor: 'rgba(255, 99, 132, 1)',
+                              borderWidth: 2,
+                              fill: true,
+                            }],
+                          },
+                          options: {
+                            responsive: true,
+                            maintainAspectRatio: false,
+                            scales: {
+                              y: {
+                                beginAtZero: true,
+                              },
+                            },
+                          },
+                        });
+                      }
+                      
+                      
+                      
+                      
+                      function updateAddress01Chart() {
+                        if (address01Chart) {
+                          address01Chart.data.labels = Array.from({ length: address01Data.length }, (_, i) => i + 1);
+                          address01Chart.data.datasets[0].data = address01Data;
+                          address01Chart.update();
+                        } else {
+                          createAddress01Chart();
+                        }
+                      }
+                      
+                      
+                      
+                       
+                      
+                      function updateData_1() {
+                       // Remove the oldest value if history exceeds 20 values
+                         // Assuming you have an HTML element with an ID like 'value-2', 'value-3', ...
+                         const elementId = `value-28`;
+                          const element = document.getElementById(elementId);
+                          element.textContent = recentValues[28];
+                              
+                      
+                       if (address01Data.length >= 20) {
+                          address01Data.shift(); // Remove the oldest value
+                        }
+                      
+                        // Add new Amp value to the end of the data array
+                        address01Data.push( element.textContent);
+                      
+                          // Update the Amp chart
+                          updateAddress01Chart();
+                      
+                      }
+                      
+                      
+                      
+                      
+                      
+                        /*
+                      
+                      
+                      
+                        
+                      
+                      /*
+                      
+                      
+                      
+                      
+                      
+                      
+                      */
+                      
+                      
+                      
+                      
+                      
+                      
+                      function createAddress02Chart() {
+                        const address02_ctx = document.getElementById('address02Chart').getContext('2d');
+                        address02Chart = new Chart(address02_ctx, {
+                          type: 'line',
+                          data: {
+                            labels: Array.from({ length: address02Data.length }, (_, i) => i + 1),
+                            datasets: [{
+                              label: 'Address 100.02 bits address change over time',
+                              data: address02Data,
+                              backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                              borderColor: 'rgba(255, 99, 132, 1)',
+                              borderWidth: 2,
+                              fill: true,
+                            }],
+                          },
+                          options: {
+                            responsive: true,
+                            maintainAspectRatio: false,
+                            scales: {
+                              y: {
+                                beginAtZero: true,
+                              },
+                            },
+                          },
+                        });
+                      }
+                      
+                      
+                      
+                      
+                      function updateAddress02Chart() {
+                        if (address02Chart) {
+                          address02Chart.data.labels = Array.from({ length: address02Data.length }, (_, i) => i + 1);
+                          address02Chart.data.datasets[0].data = address02Data;
+                          address02Chart.update();
+                        } else {
+                          createAddress02Chart();
+                        }
+                      }
+                      
+                      
+                      
+                       
+                      
+                      function updateData_2() {
+                       // Remove the oldest value if history exceeds 20 values
+                         // Assuming you have an HTML element with an ID like 'value-2', 'value-3', ...
+                         const elementId = `value-28`;
+                          const element = document.getElementById(elementId);
+                          element.textContent = recentValues[28];
+                              
+                      
+                       if (address02Data.length >= 20) {
+                          address02Data.shift(); // Remove the oldest value
+                        }
+                      
+                        // Add new Amp value to the end of the data array
+                        address02Data.push( element.textContent);
+                      
+                          // Update the Amp chart
+                          updateAddress02Chart();
+                      
+                      }
+                      
+                      
+                      
+                      
+                      
+                      //
+                      
+                      function createAddress03Chart() {
+                        const address03_ctx = document.getElementById('address03Chart').getContext('2d');
+                        address03Chart = new Chart(address03_ctx, {
+                          type: 'line',
+                          data: {
+                            labels: Array.from({ length: address03Data.length }, (_, i) => i + 1),
+                            datasets: [{
+                              label: 'Address 100.03 bits address change over time',
+                              data: address03Data,
+                              backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                              borderColor: 'rgba(255, 99, 132, 1)',
+                              borderWidth: 2,
+                              fill: true,
+                            }],
+                          },
+                          options: {
+                            responsive: true,
+                            maintainAspectRatio: false,
+                            scales: {
+                              y: {
+                                beginAtZero: true,
+                              },
+                            },
+                          },
+                        });
+                      }
+                      
+                      
+                      
+                      
+                      function updateAddress03Chart() {
+                        if (address03Chart) {
+                          address03Chart.data.labels = Array.from({ length: address03Data.length }, (_, i) => i + 1);
+                          address03Chart.data.datasets[0].data = address03Data;
+                          address03Chart.update();
+                        } else {
+                          createAddress03Chart();
+                        }
+                      }
+                      
+                      
+                      
+                       
+                      
+                      function updateData_3() {
+                       // Remove the oldest value if history exceeds 20 values
+                         // Assuming you have an HTML element with an ID like 'value-2', 'value-3', ...
+                         const elementId = `value-27`;
+                          const element = document.getElementById(elementId);
+                          element.textContent = recentValues[27];
+                              
+                      
+                       if (address03Data.length >= 20) {
+                          address03Data.shift(); // Remove the oldest value
+                        }
+                      
+                        // Add new Amp value to the end of the data array
+                        address03Data.push( element.textContent);
+                      
+                          // Update the Amp chart
+                          updateAddress03Chart();
+                      
+                      }
+                      
+                      
+                      
+                          // Update the data every 10 seconds
+                          setInterval(updateData, 1000);
+                          setInterval(updateData_1, 1000);
+                          setInterval(updateData_2,1000);
+                          setInterval(updateData_3,1000);
+                      
+                      
+                      
+                      //
+                      
+                      /*
+                      
+                      
+                      
+                      
+                      
+                      
+                      */
+                      
+                      function createAddress04Chart() {
+                        const address04_ctx = document.getElementById('address04Chart').getContext('2d');
+                        address04Chart = new Chart(address04_ctx, {
+                          type: 'line',
+                          data: {
+                            labels: Array.from({ length: address04Data.length }, (_, i) => i + 1),
+                            datasets: [{
+                              label: 'Address 100.04 bits address change over time',
+                              data: address04Data,
+                              backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                              borderColor: 'rgba(255, 99, 132, 1)',
+                              borderWidth: 2,
+                              fill: true,
+                            }],
+                          },
+                          options: {
+                            responsive: true,
+                            maintainAspectRatio: false,
+                            scales: {
+                              y: {
+                                beginAtZero: true,
+                              },
+                            },
+                          },
+                        });
+                      }
+                      
+                      
+                      function createAddress05Chart() {
+                        const address05_ctx = document.getElementById('address05Chart').getContext('2d');
+                        address05Chart = new Chart(address05_ctx, {
+                          type: 'line',
+                          data: {
+                            labels: Array.from({ length: address05Data.length }, (_, i) => i + 1),
+                            datasets: [{
+                              label: 'Address 100.05 bits address change over time',
+                              data: address05Data,
+                              backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                              borderColor: 'rgba(255, 99, 132, 1)',
+                              borderWidth: 2,
+                              fill: true,
+                            }],
+                          },
+                          options: {
+                            responsive: true,
+                            maintainAspectRatio: false,
+                            scales: {
+                              y: {
+                                beginAtZero: true,
+                              },
+                            },
+                          },
+                        });
+                      }
+                      
+                      
+                      
+                      
+                      function createAddress06Chart() {
+                        const address06_ctx = document.getElementById('address06Chart').getContext('2d');
+                        address06Chart = new Chart(address06_ctx, {
+                          type: 'line',
+                          data: {
+                            labels: Array.from({ length: address06Data.length }, (_, i) => i + 1),
+                            datasets: [{
+                              label: 'Address 100.06 bits address change over time',
+                              data: address06Data,
+                              backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                              borderColor: 'rgba(255, 99, 132, 1)',
+                              borderWidth: 2,
+                              fill: true,
+                            }],
+                          },
+                          options: {
+                            responsive: true,
+                            maintainAspectRatio: false,
+                            scales: {
+                              y: {
+                                beginAtZero: true,
+                              },
+                            },
+                          },
+                        });
+                      }
+                      
+                      
+                      
+                      
+                      function createAddress07Chart() {
+                        const address07_ctx = document.getElementById('address07Chart').getContext('2d');
+                        address07Chart = new Chart(address07_ctx, {
+                          type: 'line',
+                          data: {
+                            labels: Array.from({ length: address07Data.length }, (_, i) => i + 1),
+                            datasets: [{
+                              label: 'Address 100.07 bits address change over time',
+                              data: address07Data,
+                              backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                              borderColor: 'rgba(255, 99, 132, 1)',
+                              borderWidth: 2,
+                              fill: true,
+                            }],
+                          },
+                          options: {
+                            responsive: true,
+                            maintainAspectRatio: false,
+                            scales: {
+                              y: {
+                                beginAtZero: true,
+                              },
+                            },
+                          },
+                        });
+                      }
+                      
+                      
+                      
+                      
+                      
+                      function updateAddress04Chart() {
+                        if (address04Chart) {
+                          address04Chart.data.labels = Array.from({ length: address04Data.length }, (_, i) => i + 1);
+                          address04Chart.data.datasets[0].data = address04Data;
+                          address04Chart.update();
+                        } else {
+                          createAddress04Chart();
+                        }
+                      }
+                      
+                      
+                      
+                      function updateAddress05Chart() {
+                        if (address05Chart) {
+                          address05Chart.data.labels = Array.from({ length: address05Data.length }, (_, i) => i + 1);
+                          address05Chart.data.datasets[0].data = address05Data;
+                          address05Chart.update();
+                        } else {
+                          createAddress05Chart();
+                        }
+                      }
+                      
+                      
+                      
+                      function updateAddress06Chart() {
+                        if (address06Chart) {
+                          address06Chart.data.labels = Array.from({ length: address06Data.length }, (_, i) => i + 1);
+                          address06Chart.data.datasets[0].data = address06Data;
+                          address06Chart.update();
+                        } else {
+                          createAddress06Chart();
+                        }
+                      }
+                      
+                      
+                      
+                      function updateAddress07Chart() {
+                        if (address07Chart) {
+                          address07Chart.data.labels = Array.from({ length: address07Data.length }, (_, i) => i + 1);
+                          address07Chart.data.datasets[0].data = address07Data;
+                          address07Chart.update();
+                        } else {
+                          createAddress07Chart();
+                        }
+                      }
+                      
+                       
+                      
+                      function updateData_4() {
+                       // Remove the oldest value if history exceeds 20 values
+                         // Assuming you have an HTML element with an ID like 'value-2', 'value-3', ...
+                         const elementId = `value-21`;
+                          const element = document.getElementById(elementId);
+                          element.textContent = recentValues[21];
+                              
+                      
+                       if (address04Data.length >= 20) {
+                          address04Data.shift(); // Remove the oldest value
+                        }
+                      
+                        // Add new Amp value to the end of the data array
+                        address04Data.push( element.textContent);
+                      
+                          // Update the Amp chart
+                          updateAddress04Chart();
+                      
+                      }
+                      
+                      
+                      function updateData_5() {
+                       // Remove the oldest value if history exceeds 20 values
+                         // Assuming you have an HTML element with an ID like 'value-2', 'value-3', ...
+                         const elementId = `value-20`;
+                          const element = document.getElementById(elementId);
+                          element.textContent = recentValues[20];
+                              
+                      
+                       if (address05Data.length >= 20) {
+                          address05Data.shift(); // Remove the oldest value
+                        }
+                      
+                        // Add new Amp value to the end of the data array
+                        address05Data.push( element.textContent);
+                      
+                          // Update the Amp chart
+                          updateAddress05Chart();
+                      
+                      }
+                      
+                      
+                      function updateData_6() {
+                       // Remove the oldest value if history exceeds 20 values
+                         // Assuming you have an HTML element with an ID like 'value-2', 'value-3', ...
+                         const elementId = `value-19`;
+                          const element = document.getElementById(elementId);
+                          element.textContent = recentValues[19];
+                              
+                      
+                       if (address06Data.length >= 20) {
+                          address06Data.shift(); // Remove the oldest value
+                        }
+                      
+                        // Add new Amp value to the end of the data array
+                        address06Data.push( element.textContent);
+                      
+                          // Update the Amp chart
+                          updateAddress06Chart();
+                      
+                      }
+                      
+                      function updateData_7() {
+                       // Remove the oldest value if history exceeds 20 values
+                         // Assuming you have an HTML element with an ID like 'value-2', 'value-3', ...
+                         const elementId = `value-18`;
+                          const element = document.getElementById(elementId);
+                          element.textContent = recentValues[18];
+                              
+                      
+                       if (address07Data.length >= 20) {
+                          address07Data.shift(); // Remove the oldest value
+                        }
+                      
+                        // Add new Amp value to the end of the data array
+                        address07Data.push( element.textContent);
+                      
+                          // Update the Amp chart
+                          updateAddress07Chart();
+                      
+                      }
+                      
+                          // Update the data every 10 seconds
+                          setInterval(updateData_4, 1000);
+                          setInterval(updateData_5, 1000);
+                          setInterval(updateData_6, 1000);
+                          setInterval(updateData_7, 1000);
+                      
+                      
+                      //
+                      
+                      /*
+                      
+                      
+                      
+                      
+                      
+                      
+                      */
+                      
+                      
+                      
+                      function createAddress08Chart() {
+                        const address08_ctx = document.getElementById('address08Chart').getContext('2d');
+                        address08Chart = new Chart(address08_ctx, {
+                          type: 'line',
+                          data: {
+                            labels: Array.from({ length: address08Data.length }, (_, i) => i + 1),
+                            datasets: [{
+                              label: 'Address 100.08 bits address change over time',
+                              data: address08Data,
+                              backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                              borderColor: 'rgba(255, 99, 132, 1)',
+                              borderWidth: 2,
+                              fill: true,
+                            }],
+                          },
+                          options: {
+                            responsive: true,
+                            maintainAspectRatio: false,
+                            scales: {
+                              y: {
+                                beginAtZero: true,
+                              },
+                            },
+                          },
+                        });
+                      }
+                      
+                      
+                      function createAddress09Chart() {
+                        const address09_ctx = document.getElementById('address09Chart').getContext('2d');
+                        address09Chart = new Chart(address09_ctx, {
+                          type: 'line',
+                          data: {
+                            labels: Array.from({ length: address09Data.length }, (_, i) => i + 1),
+                            datasets: [{
+                              label: 'Address 100.09 bits address change over time',
+                              data: address09Data,
+                              backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                              borderColor: 'rgba(255, 99, 132, 1)',
+                              borderWidth: 2,
+                              fill: true,
+                            }],
+                          },
+                          options: {
+                            responsive: true,
+                            maintainAspectRatio: false,
+                            scales: {
+                              y: {
+                                beginAtZero: true,
+                              },
+                            },
+                          },
+                        });
+                      }
+                      
+                      
+                      
+                      
+                      function createAddress10Chart() {
+                        const address10_ctx = document.getElementById('address10Chart').getContext('2d');
+                        address10Chart = new Chart(address10_ctx, {
+                          type: 'line',
+                          data: {
+                            labels: Array.from({ length: address10Data.length }, (_, i) => i + 1),
+                            datasets: [{
+                              label: 'Address 100.10 bits address change over time',
+                              data: address10Data,
+                              backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                              borderColor: 'rgba(255, 99, 132, 1)',
+                              borderWidth: 2,
+                              fill: true,
+                            }],
+                          },
+                          options: {
+                            responsive: true,
+                            maintainAspectRatio: false,
+                            scales: {
+                              y: {
+                                beginAtZero: true,
+                              },
+                            },
+                          },
+                        });
+                      }
+                      
+                      
+                      
+                      
+                      function createAddress11Chart() {
+                        const address11_ctx = document.getElementById('address11Chart').getContext('2d');
+                        address11Chart = new Chart(address11_ctx, {
+                          type: 'line',
+                          data: {
+                            labels: Array.from({ length: address11Data.length }, (_, i) => i + 1),
+                            datasets: [{
+                              label: 'Address 100.11 bits address change over time',
+                              data: address07Data,
+                              backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                              borderColor: 'rgba(255, 99, 132, 1)',
+                              borderWidth: 2,
+                              fill: true,
+                            }],
+                          },
+                          options: {
+                            responsive: true,
+                            maintainAspectRatio: false,
+                            scales: {
+                              y: {
+                                beginAtZero: true,
+                              },
+                            },
+                          },
+                        });
+                      }
+                      
+                      
+                      
+                      
+                      
+                      function updateAddress08Chart() {
+                        if (address08Chart) {
+                          address08Chart.data.labels = Array.from({ length: address08Data.length }, (_, i) => i + 1);
+                          address08Chart.data.datasets[0].data = address08Data;
+                          address08Chart.update();
+                        } else {
+                          createAddress08Chart();
+                        }
+                      }
+                      
+                      
+                      
+                      function updateAddress09Chart() {
+                        if (address09Chart) {
+                          address09Chart.data.labels = Array.from({ length: address09Data.length }, (_, i) => i + 1);
+                          address09Chart.data.datasets[0].data = address09Data;
+                          address09Chart.update();
+                        } else {
+                          createAddress09Chart();
+                        }
+                      }
+                      
+                      
+                      
+                      function updateAddress10Chart() {
+                        if (address10Chart) {
+                          address10Chart.data.labels = Array.from({ length: address10Data.length }, (_, i) => i + 1);
+                          address10Chart.data.datasets[0].data = address10Data;
+                          address10Chart.update();
+                        } else {
+                          createAddress10Chart();
+                        }
+                      }
+                      
+                      
+                      
+                      function updateAddress11Chart() {
+                        if (address11Chart) {
+                          address11Chart.data.labels = Array.from({ length: address11Data.length }, (_, i) => i + 1);
+                          address11Chart.data.datasets[0].data = address11Data;
+                          address11Chart.update();
+                        } else {
+                          createAddress11Chart();
+                        }
+                      }
+                      
+                       
+                      
+                      function updateData_8() {
+                       // Remove the oldest value if history exceeds 20 values
+                         // Assuming you have an HTML element with an ID like 'value-2', 'value-3', ...
+                         const elementId = `value-13`;
+                          const element = document.getElementById(elementId);
+                          element.textContent = recentValues[13];
+                              
+                      
+                       if (address08Data.length >= 20) {
+                          address08Data.shift(); // Remove the oldest value
+                        }
+                      
+                        // Add new Amp value to the end of the data array
+                        address08Data.push( element.textContent);
+                      
+                          // Update the Amp chart
+                          updateAddress08Chart();
+                      
+                      }
+                      
+                      
+                      function updateData_9() {
+                       // Remove the oldest value if history exceeds 20 values
+                         // Assuming you have an HTML element with an ID like 'value-2', 'value-3', ...
+                         const elementId = `value-12`;
+                          const element = document.getElementById(elementId);
+                          element.textContent = recentValues[12];
+                              
+                      
+                       if (address09Data.length >= 20) {
+                          address09Data.shift(); // Remove the oldest value
+                        }
+                      
+                        // Add new Amp value to the end of the data array
+                        address09Data.push( element.textContent);
+                      
+                          // Update the Amp chart
+                          updateAddress09Chart();
+                      
+                      }
+                      
+                      
+                      function updateData_10() {
+                       // Remove the oldest value if history exceeds 20 values
+                         // Assuming you have an HTML element with an ID like 'value-2', 'value-3', ...
+                         const elementId = `value-11`;
+                          const element = document.getElementById(elementId);
+                          element.textContent = recentValues[11];
+                              
+                      
+                       if (address10Data.length >= 20) {
+                          address10Data.shift(); // Remove the oldest value
+                        }
+                      
+                        // Add new Amp value to the end of the data array
+                        address10Data.push( element.textContent);
+                      
+                          // Update the Amp chart
+                          updateAddress10Chart();
+                      
+                      }
+                      
+                      function updateData_11() {
+                       // Remove the oldest value if history exceeds 20 values
+                         // Assuming you have an HTML element with an ID like 'value-2', 'value-3', ...
+                         const elementId = `value-10`;
+                          const element = document.getElementById(elementId);
+                          element.textContent = recentValues[10];
+                              
+                      
+                       if (address11Data.length >= 20) {
+                          address11Data.shift(); // Remove the oldest value
+                        }
+                      
+                        // Add new Amp value to the end of the data array
+                        address11Data.push( element.textContent);
+                      
+                          // Update the Amp chart
+                          updateAddress11Chart();
+                      
+                      }
+                      
+                          // Update the data every 10 seconds
+                          setInterval(updateData_8, 1000);
+                          setInterval(updateData_9, 1000);
+                          setInterval(updateData_10, 1000);
+                          setInterval(updateData_11, 1000);
+                      
+                      
+                      //
+                      
+                      
+                      /*
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      */
+                      
+                      
+                      
+                      
+                      function createAddress12Chart() {
+                        const address12_ctx = document.getElementById('address12Chart').getContext('2d');
+                        address12Chart = new Chart(address12_ctx, {
+                          type: 'line',
+                          data: {
+                            labels: Array.from({ length: address12Data.length }, (_, i) => i + 1),
+                            datasets: [{
+                              label: 'Address 100.12 bits address change over time',
+                              data: address12Data,
+                              backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                              borderColor: 'rgba(255, 99, 132, 1)',
+                              borderWidth: 2,
+                              fill: true,
+                            }],
+                          },
+                          options: {
+                            responsive: true,
+                            maintainAspectRatio: false,
+                            scales: {
+                              y: {
+                                beginAtZero: true,
+                              },
+                            },
+                          },
+                        });
+                      }
+                      
+                      
+                      function createAddress13Chart() {
+                        const address13_ctx = document.getElementById('address13Chart').getContext('2d');
+                        address13Chart = new Chart(address13_ctx, {
+                          type: 'line',
+                          data: {
+                            labels: Array.from({ length: address13Data.length }, (_, i) => i + 1),
+                            datasets: [{
+                              label: 'Address 100.13 bits address change over time',
+                              data: address13Data,
+                              backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                              borderColor: 'rgba(255, 99, 132, 1)',
+                              borderWidth: 2,
+                              fill: true,
+                            }],
+                          },
+                          options: {
+                            responsive: true,
+                            maintainAspectRatio: false,
+                            scales: {
+                              y: {
+                                beginAtZero: true,
+                              },
+                            },
+                          },
+                        });
+                      }
+                      
+                      
+                      
+                      
+                      function createAddress14Chart() {
+                        const address14_ctx = document.getElementById('address14Chart').getContext('2d');
+                        address14Chart = new Chart(address14_ctx, {
+                          type: 'line',
+                          data: {
+                            labels: Array.from({ length: address14Data.length }, (_, i) => i + 1),
+                            datasets: [{
+                              label: 'Address 100.14 bits address change over time',
+                              data: address14Data,
+                              backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                              borderColor: 'rgba(255, 99, 132, 1)',
+                              borderWidth: 2,
+                              fill: true,
+                            }],
+                          },
+                          options: {
+                            responsive: true,
+                            maintainAspectRatio: false,
+                            scales: {
+                              y: {
+                                beginAtZero: true,
+                              },
+                            },
+                          },
+                        });
+                      }
+                      
+                      
+                      
+                      
+                      function createAddress15Chart() {
+                        const address15_ctx = document.getElementById('address15Chart').getContext('2d');
+                        address15Chart = new Chart(address15_ctx, {
+                          type: 'line',
+                          data: {
+                            labels: Array.from({ length: address15Data.length }, (_, i) => i + 1),
+                            datasets: [{
+                              label: 'Address 100.15 bits address change over time',
+                              data: address15Data,
+                              backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                              borderColor: 'rgba(255, 99, 132, 1)',
+                              borderWidth: 2,
+                              fill: true,
+                            }],
+                          },
+                          options: {
+                            responsive: true,
+                            maintainAspectRatio: false,
+                            scales: {
+                              y: {
+                                beginAtZero: true,
+                              },
+                            },
+                          },
+                        });
+                      }
+                      
+                      
+                      
+                      
+                      
+                      function updateAddress12Chart() {
+                        if (address12Chart) {
+                          address12Chart.data.labels = Array.from({ length: address12Data.length }, (_, i) => i + 1);
+                          address12Chart.data.datasets[0].data = address12Data;
+                          address12Chart.update();
+                        } else {
+                          createAddress12Chart();
+                        }
+                      }
+                      
+                      
+                      
+                      function updateAddress13Chart() {
+                        if (address13Chart) {
+                          address13Chart.data.labels = Array.from({ length: address13Data.length }, (_, i) => i + 1);
+                          address13Chart.data.datasets[0].data = address13Data;
+                          address13Chart.update();
+                        } else {
+                          createAddress13Chart();
+                        }
+                      }
+                      
+                      
+                      
+                      function updateAddress14Chart() {
+                        if (address14Chart) {
+                          address14Chart.data.labels = Array.from({ length: address14Data.length }, (_, i) => i + 1);
+                          address14Chart.data.datasets[0].data = address14Data;
+                          address14Chart.update();
+                        } else {
+                          createAddress14Chart();
+                        }
+                      }
+                      
+                      
+                      
+                      function updateAddress15Chart() {
+                        if (address15Chart) {
+                          address15Chart.data.labels = Array.from({ length: address15Data.length }, (_, i) => i + 1);
+                          address15Chart.data.datasets[0].data = address15Data;
+                          address15Chart.update();
+                        } else {
+                          createAddress15Chart();
+                        }
+                      }
+                      
+                       
+                      
+                      function updateData_12() {
+                       // Remove the oldest value if history exceeds 20 values
+                         // Assuming you have an HTML element with an ID like 'value-2', 'value-3', ...
+                         const elementId = `value-5`;
+                          const element = document.getElementById(elementId);
+                          element.textContent = recentValues[5];
+                              
+                      
+                       if (address12Data.length >= 20) {
+                          address12Data.shift(); // Remove the oldest value
+                        }
+                      
+                        // Add new Amp value to the end of the data array
+                        address12Data.push( element.textContent);
+                      
+                          // Update the Amp chart
+                          updateAddress12Chart();
+                      
+                      }
+                      
+                      
+                      function updateData_13() {
+                       // Remove the oldest value if history exceeds 20 values
+                         // Assuming you have an HTML element with an ID like 'value-2', 'value-3', ...
+                         const elementId = `value-4`;
+                          const element = document.getElementById(elementId);
+                          element.textContent = recentValues[4];
+                              
+                      
+                       if (address13Data.length >= 20) {
+                          address13Data.shift(); // Remove the oldest value
+                        }
+                      
+                        // Add new Amp value to the end of the data array
+                        address13Data.push( element.textContent);
+                      
+                          // Update the Amp chart
+                          updateAddress13Chart();
+                      
+                      }
+                      
+                      
+                      function updateData_14() {
+                       // Remove the oldest value if history exceeds 20 values
+                         // Assuming you have an HTML element with an ID like 'value-2', 'value-3', ...
+                         const elementId = `value-3`;
+                          const element = document.getElementById(elementId);
+                          element.textContent = recentValues[3];
+                              
+                      
+                       if (address14Data.length >= 20) {
+                          address14Data.shift(); // Remove the oldest value
+                        }
+                      
+                        // Add new Amp value to the end of the data array
+                        address14Data.push( element.textContent);
+                      
+                          // Update the Amp chart
+                          updateAddress14Chart();
+                      
+                      }
+                      
+                      function updateData_15() {
+                       // Remove the oldest value if history exceeds 20 values
+                         // Assuming you have an HTML element with an ID like 'value-2', 'value-3', ...
+                         const elementId = `value-2`;
+                          const element = document.getElementById(elementId);
+                          element.textContent = recentValues[2];
+                              
+                      
+                       if (address15Data.length >= 20) {
+                          address15Data.shift(); // Remove the oldest value
+                        }
+                      
+                        // Add new Amp value to the end of the data array
+                        address15Data.push( element.textContent);
+                      
+                          // Update the Amp chart
+                          updateAddress15Chart();
+                      
+                      }
+                      
+                          // Update the data every 10 seconds
+                          setInterval(updateData_12, 1000);
+                          setInterval(updateData_13, 1000);
+                          setInterval(updateData_14, 1000);
+                          setInterval(updateData_15, 1000);
+                      
+                      
+                      //
+                      
+                      
+                      
+                      
+                      
+                      
+                      /*
+                      
+                      
+                      
+                      
+                      
+                      */
+                      
+                          const socket = new WebSocket('<%= websocketUrl %>');
+                      
+                          socket.onopen = () => {
+                            console.log('WebSocket client connected');
+                          };
+                      
+                          socket.onmessage = (event) => {
+                            console.log('Received message from server:', event.data);
+                            document.getElementById('message').textContent = event.data;
+                          };
+                      
+                          socket.onmessage = (event) => {
+                            console.log('Received message from server:', event.data);
+                            document.getElementById('message').textContent = event.data;
+                                    // Assuming event.data contains the message string
+                              const message = event.data; // Replace this with your actual message
+                      
+                              // Find the index of "[" in the message string
+                              const startIndex = message.indexOf("[");
+                              if (startIndex !== -2) {
+                                // Get the substring after "["
+                                const extractedString = message.substring(startIndex);
+                                // Convert each hexadecimal string to decimal and create a new array
+                      
+                                console.log('Extracted String:', extractedString);
+                      
+                      
+                      
+                                // Update the content of an HTML element with the extracted string
+                                //document.getElementById('message').textContent = extractedString;
+                      
+                      
+                      
+                                const extractedValues = [];
+                      
+                                for (let i = 0; i < extractedString.length; i++) {
+                                  const str = extractedString[i];
+                                  const rightmostCharacter = str.charAt(str.length - 1);
+                                  extractedValues.push(rightmostCharacter);
+                                }
+                      
+                      
+                                var address1 = "";
+                      var address2 = "";
+                      var address3 = "";
+                      var address4 = "";
+                      
+                      address1 = extractedValues[26] + extractedValues[27] + extractedValues[28] +  extractedValues[29]
+                      address2 = extractedValues[18] + extractedValues[19] + extractedValues[20] +  extractedValues[21]
+                      address3 = extractedValues[10] + extractedValues[11] + extractedValues[12] +  extractedValues[13]
+                      address4 = extractedValues[2] + extractedValues[3] + extractedValues[4] +  extractedValues[5]
+                      
+                      
+                      const binaryValue_1 = parseInt(address1, 2); // Convert binary string to decimal
+                      const binaryValue_2 = parseInt(address2, 2); // Convert binary string to decimal
+                      const binaryValue_3 = parseInt(address3, 2); // Convert binary string to decimal
+                      const binaryValue_4 = parseInt(address4, 2); // Convert binary string to decimal
+                      
+                      const hexValue_1 = binaryValue_1.toString(16); // Convert decimal to hex
+                      const hexValue_2 = binaryValue_2.toString(16); // Convert decimal to hex
+                      const hexValue_3 = binaryValue_3.toString(16); // Convert decimal to hex
+                      const hexValue_4 = binaryValue_4.toString(16); // Convert decimal to hex
+                      
+                      
+                      const address_hex = hexValue_4 + hexValue_3 + hexValue_2 +hexValue_1;
+                      
+                      //console.log(address_hex);
+                      const decimalValue = parseInt(address_hex, 16);
+                      
+                      //console.log('Decimal Value:', decimalValue);
+                      
+                      
+                      //console.log('Hex Value:', hexValue_1);
+                      
+                      //console.log('Hex Value:', hexValue_2);
+                      //console.log('Hex Value:', hexValue_3);
+                      //console.log('Hex Value:', hexValue_4);
+                      
+                      // Update the content of an HTML element with the decimal values
+                      document.getElementById('message').textContent = "Hexadecimal " + decimalValue + " Binary : " +extractedString;
+                      total_decimal = decimalValue;
+                      
+                      
+                      
+                                console.log(extractedValues);
+                                              // Indices of the elements you want to display
+                                  const indicesToDisplay = [2, 3, 4, 5, 10, 11, 12, 13, 18, 19, 20, 21, 26, 27, 28, 29];
+                      
+                                  // Loop through the indices and update the content of HTML elements
+                                  for (const index of indicesToDisplay) {
+                                    const value = extractedValues[index];
+                                    recentValues[index] = value; // Update the recent value
+                      
+                                    // Assuming you have an HTML element with an ID like 'value-2', 'value-3', ...
+                                    const elementId = `value-${index}`;
+                                    const element = document.getElementById(elementId);
+                      
+                                    if (element) {
+                                      element.textContent = value;
+                                    }
+                                  }
+                      
+                              } else {
+                                console.log('No "[" found in the message.');
+                              }
+                          };
+                      
+                          socket.onclose = () => {
+                            console.log('WebSocket connection closed');
+                            alert('WebSocket connection closed, Please refresh browser to reconnect otherwise the PLC is not under monitor realtime');
+                                // Access the element by ID
+                          const ErrorDisconnect = document.getElementById('message');
+                      
+                          // Modify the element
+                          ErrorDisconnect.textContent = 'WebSocket connection closed, Please refresh browser to reconnect otherwise the PLC is not under monitor realtime';
+                          ErrorDisconnect.style.color = 'red';
+                          };
+                      
+                      
+                      
+                      /*
+                          function submitForm() {
+                              const form = document.getElementById('myForm');
+                              console.log(form);
+                              const formData = new FormData(form);
+                              console.log(formData);
+                      
+                      
+                                // Access individual form fields and their values
+                        formData.forEach((value, key) => {
+                          console.log(`${key}: ${value}`);ss
+                        });
+                        formData.append('id', '123');
+                      
+                        formData.append('address_0', '123');
+                        formData.append('address_1', '123');
+                      
+                        axios.put('http://localhost:3000', formData)
+                          .then(response => {
+                            console.log(response.data);
+                            // Handle the response as needed
+                          })
+                          .catch(error => {
+                            console.error('Error:', error);
+                            // Handle any errors that occur during the request
+                          });
+                        }
+                        */
+                        </script>
+
+  </body>
+</html>
