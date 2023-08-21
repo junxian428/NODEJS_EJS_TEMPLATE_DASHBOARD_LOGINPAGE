@@ -43,6 +43,14 @@ router.get('/logview', (req, res) => {
 });
 
 
+
+router.get('/telegram', (req, res) => {
+  res.render('telegram');
+
+});
+
+
+
 // Define your route
 router.get('/', isAuthenticated, async (req, res) => {
   // If the user is authenticated, redirect to dashboard
