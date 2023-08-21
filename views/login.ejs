@@ -174,10 +174,7 @@ bottom: 100%;
 
 </head>
 <body>
-  <h1>Login</h1>
-  <% if (message.length > 0) { %>
-    <p><%= message %></p>
-  <% } %>
+
           <div class="login-box">
 
 
@@ -195,6 +192,10 @@ bottom: 100%;
                     </div>
                     <br>
                     <button type="submit" style="height:80px; width:100px;">Login</button>
+
+                    <% if (message.length > 0) { %>
+                        <p style="color:red;"><%= message %></p>
+                      <% } %>
                 </form>
 
 
